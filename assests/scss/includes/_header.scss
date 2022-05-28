@@ -65,7 +65,7 @@ header{
             }
         }
     }
-    @include media-max-lg{
+    @include media-min-sm{
         background-size: 100% 100%;
     }
 }
