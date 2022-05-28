@@ -1,0 +1,19 @@
+// Start button style
+body{
+    .btn{
+        font-size: 0.8125rem;
+        border-radius: 30px;
+        width: fit-content;
+        letter-spacing: 0.5px;
+        padding: 0.75rem 2rem;
+        @include font-style($font-b);
+    }
+}
+@each $btn in $buttons {
+    .btn-#{nth($btn, 1)} {
+        &:hover, &:active {
+            background-color: nth($btn, 2) !important;
+        }
+    }
+}
+// End button style

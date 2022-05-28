@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start head tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Start font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <!-- End font link -->
+    <!-- Start external links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <!-- End external links -->
+    <title>Bootstrap Task 04</title>
+</head>
+<!-- End head tag -->
+<!-- Start body tag -->
+<body>
+    <!-- Start header -->
+    <!-- Start topnav -->
+    <header>
+        <div class="top-bar bg-blue">
+            <div class="container">
+                <div class="row mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="address col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start align-items-center ps-lg-0">
+                        <div class="info navbar-nav d-flex flex-lg-row">
+                            <a href="#" class="nav-link text-center text-lg-start text-white me-lg-3"><i class="far fa-comment-dots pe-2"></i>support@novena.com</a>
+                            <a href="#" class="nav-link text-center text-lg-start text-white ms-lg-3"><i class="fas fa-map-marker-alt pe-2"></i>Address Ta-134/A, New York, USA</a>
+                        </div>
+                    </div>
+                    <div class="phone col-12 col-lg-6">
+                        <div class="number d-flex justify-content-center justify-content-lg-end align-items-center">
+                            <a href="#" class="nav-link text-white pe-lg-0">
+                                Call Now :
+                                <span class="mb-0">823-4565-13456</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand ms-xl-5 ps-xl-4" href="#"><img src="./public/images/logo.png" alt=""></a>
+                <button class="navbar-toggler shadow-none border-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span><i class="fas fa-bars fs-1"></i></span>
+                </button>
+                <div class="collapse navbar-collapse me-xl-5 pe-xl-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Department<i class="fas fa-chevron-down ms-2"></i>
+                            </a>
+                            <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-6" href="#">Departments</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fs-6" href="#">Department Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Doctors<i class="fas fa-chevron-down ms-2"></i>
+                            </a>
+                            <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-6" href="#">Doctors</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fs-6" href="#">Doctor Single</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fs-6" href="#">Appointment</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog<i class="fas fa-chevron-down ms-2"></i>
+                            </a>
+                            <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-6" href="#">Blog with Sidebar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fs-6" href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End topnav -->
+    <!-- Start banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="row mx-xl-5 px-xl-4 py-lg-1">
+                <div class="box col-lg-6 col-md-12 col-xl-7">
+                    <div class="content">
+                        <div class="line mb-3"></div>
+                        <span class="txt-l text-uppercase">Total Health care solution</span>
+                        <h1 class="txt-b text-capitalize mb-3 mt-3">Your most trusted health partner</h1>
+                        <p class="txt-l mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+                        <button class="btn btn-blue">
+                            <a href="#" class="text-uppercase text-decoration-none text-white">Make appoinment<i class="fas fa-chevron-right ms-4"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner -->
+    <!-- End header-->
+    <!-- Start main tag -->
+    <main>
+        <!-- Start section1 -->
+        <section class="section1 feature">
+            <div class="container">
+                <div class="row mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-12">
+                        <div class="feature-content d-lg-flex">
+                            <div class="feature-item bg-white mb-3 mb-lg-5 mb-lg-0">
+                                <div class="icon txt-b mb-3">
+                                    <i class="fas fa-laptop-medical"></i>
+                                </div>
+                                <span class="txt-l fs-6 mb-2">24 Hours Service</span>
+                                <h4 class="txt-b mb-3">Online Appoinment</h4>
+                                <p class="mb-4 txt-l">Get ALl time support for emergency. We have introduced the principle of family medicine.</p>
+                                <button class="btn btn-red">
+                                    <a href="#" class="text-uppercase text-decoration-none text-white">Make a appoinment</a>
+                                </button>
+                            </div>
+                            <div class="feature-item bg-white mb-3 mb-lg-5 mb-lg-0">
+                                <div class="icon txt-b mb-3">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <span class="txt-l fs-6 mb-2">Timing schedule</span>
+                                <h4 class="txt-b mb-3">Working Hours</h4>
+                                <ul class="ps-0 mt-0 mb-6">
+                                    <li class="d-flex justify-content-between txt-l">Sun - Wed : <span>8:00 - 17:00</span></li>
+                                    <li class="d-flex justify-content-between txt-l">Thu - Fri : <span>9:00 - 17:00</span></li>
+                                    <li class="d-flex justify-content-between txt-l">Sat - Sun : <span>10:00 - 17:00</span></li>
+                                </ul>
+                            </div>
+                            <div class="feature-item bg-white mb-3 mb-lg-5 mb-lg-0">
+                                <div class="icon txt-b mb-3">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <span class="txt-l fs-6 mb-2">Emegency Cases</span>
+                                <h4 class="txt-b mb-3">1-800-700-6200</h4>
+                                <p class="mb-4 txt-l">Get ALl time support for emergency. We have introduced the principle of family medicine. Get Conneted with us for any urgency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section1 -->
+        <!-- Start section2 -->
+        <section class="section2 about">
+            <div class="container">
+                <div class="row align-items-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-4 col-sm-6">
+                        <div class="about-img">
+                            <img src="./public/images/img-1.jpg" alt="#" class="img-fluid rounded">
+                            <img src="./public/images/img-2.jpg" alt="#" class="img-fluid rounded mt-4">
+                        </div>
+                    </div>
+                    <div class="box col-lg-4 col-sm-6">
+                        <div class="about-img mt-4 mt-lg-0">
+                            <img src="./public/images/img-3.jpg" alt="#" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="box col-lg-4">
+                        <div class="about-content mt-4 mt-lg-0">
+                            <h2 class="txt-b title-color">Personal care & healthy living</h2>
+                            <p class="txt-l mt-4 mb-5">We provide best leading medicle service Nulla perferendis veniam deleniti ipsum officia dolores repellat laudantium obcaecati neque.</p>
+                            <button class="btn btn-blue">
+                                <a href="#" class="text-uppercase text-decoration-none text-white">Services<i class="fas fa-chevron-right ms-4"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section2 -->
+        <!-- Start section3 -->
+        <section class="section3 static w-100">
+            <div class="container">
+                <div class="wrap mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="content position-relative">
+                        <div class="row">
+                            <div class="box col-lg-3 col-md-6 col-sm-6">
+                                <div class="count position-relative text-center grey">
+                                    <i class="fas fa-user-tie d-block position-absolute start-0 end-0"></i>
+                                    <span class="h3 text-white">58</span>k
+                                    <p class="my-0">Happy People</p>
+                                </div>
+                            </div>
+                            <div class="box col-lg-3 col-md-6 col-sm-6">
+                                <div class="count position-relative text-center grey">
+                                    <i class="fas fa-flag d-block position-absolute start-0 end-0"></i>
+                                    <span class="h3 text-white">700</span>+
+                                    <p class="my-0">Surgery Comepleted</p>
+                                </div>
+                            </div>
+                            
+                            <div class="box col-lg-3 col-md-6 col-sm-6">
+                                <div class="count position-relative text-center grey">
+                                    <i class="fas fa-user-md d-block position-absolute start-0 end-0"></i>
+                                    <span class="h3 text-white">40</span>+
+                                    <p class="my-0">Expert Doctors</p>
+                                </div>
+                            </div>
+                            <div class="box col-lg-3 col-md-6 col-sm-6">
+                                <div class="count position-relative text-center grey">
+                                    <i class="fas fa-globe d-block position-absolute start-0 end-0"></i>
+                                    <span class="h3 text-white">20</span>
+                                    <p class="my-0">Worldwide Branch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section3 -->
+        <!-- Start section4 -->
+        <section class="section4 service bg">
+            <div class="container">
+                <div class="row justify-content-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-7 text-center">
+                        <div class="title mb-5">
+                            <h2 class="txt-b">Award winning patient care</h2>
+                            <div class="line mx-auto my-4"></div>
+                            <p class="txt-l mt-0 mb-1">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-flask red"></i>
+                                <h4 class="mt-3 mb-3">Laboratory services</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-heartbeat red"></i>
+                                <h4 class="mt-3 mb-3">Heart Disease</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-tooth red"></i>
+                                <h4 class="mt-3 mb-3">Dental Care</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-user-injured red"></i>
+                                <h4 class="mt-3 mb-3">Body Surgery</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-brain red"></i>
+                                <h4 class="mt-3 mb-3">Neurology Surgery</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box col-lg-4 col-md-6 col-sm-6">
+                        <div class="service-item bg-white rounded mb-4">
+                            <div class="icon d-flex align-items-center float-left">
+                                <i class="fas fa-dna red"></i>
+                                <h4 class="mt-3 mb-3">Gynecology</h4>
+                            </div>
+                            <div class="content">
+                                <p class="mb-4 txt-l">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section4 -->
+        <!-- Start section5 -->
+        <section class="section5 appointment">
+            <div class="container">
+                <div class="row align-items-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-6">
+                        <div class="content position-relative">
+                            <img src="./public/images/img-3.jpg" alt="#" class="img-fluid">
+                            <div class="emergency position-absolute bg-blue">
+                                <h2 class="text-white"><i class="fas fa-phone-alt grey me-4"></i>+23 345 67980</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-6 col-md-10">
+                        <div class="wrap mt-5 mt-lg-0">
+                            <h2 class="txt-b mb-2">Book appoinment</h2>
+                            <p class="txt-l mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                            <form id="#" class="form" method="post" action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <select class="form-control bg shadow-none">
+                                            <option>Choose Department</option>
+                                            <option>Software Design</option>
+                                            <option>Development cycle</option>
+                                            <option>Software Development</option>
+                                            <option>Maintenance</option>
+                                            <option>Process Query</option>
+                                            <option>Cost and Duration</option>
+                                            <option>Modal Delivery</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <select class="form-control bg shadow-none">
+                                            <option>Select Doctors</option>
+                                            <option>Software Design</option>
+                                            <option>Development cycle</option>
+                                            <option>Software Development</option>
+                                            <option>Maintenance</option>
+                                            <option>Process Query</option>
+                                            <option>Cost and Duration</option>
+                                            <option>Modal Delivery</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <input name="date" type="text" class="form-control bg shadow-none rounded-0" placeholder="dd/mm/yyyy">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <input name="time" type="text" class="form-control bg shadow-none rounded-0" placeholder="Time">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <input name="name" type="text" class="form-control bg shadow-none rounded-0" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <input name="phone" type="tel" class="form-control bg shadow-none rounded-0" placeholder="Phone Number">
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="form-group-2 mb-4">
+                                    <textarea name="message" id="message" class="form-control bg shadow-none rounded-0" rows="6" placeholder="Your Message"></textarea>
+                                </div>
+                                <button class="btn btn-red">
+                                    <a href="#" class="text-uppercase text-decoration-none text-white">Make Appoinment<i class="fas fa-chevron-right ms-4"></i></a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section5 -->
+        <!-- Start section6 -->
+        <section class="section6 testimonial bg">
+            <div class="container">
+                <div class="row justify-content-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-7">
+                        <div class="section-title text-center mx-lg-4">
+                            <h2 class="txt-b">We served over 5000+ Patients</h2>
+                            <div class="line mx-auto my-4"></div>
+                            <p class="txt-l">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="row align-items-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-12 testimonial-wrap-2">
+                        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="mx-3"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item active">
+                                    <div class="box d-md-flex">
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white me-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb1.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Amazing service!</h4>
+                                                    <span class="txt-l">John Partho</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white ms-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb2.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Expert doctors!</h4>
+                                                    <span class="txt-l">Mullar Sarth</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="box d-md-flex">
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white me-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb2.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Amazing service!</h4>
+                                                    <span class="txt-l">John Partho</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white ms-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb3.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Expert doctors!</h4>
+                                                    <span class="txt-l">Mullar Sarth</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="box d-md-flex">
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white me-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb3.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Amazing service!</h4>
+                                                    <span class="txt-l">John Partho</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial col-12 col-md-6 bg">
+                                            <div class="content bg-white ms-md-1">
+                                                <div class="thumb float-start">
+                                                    <img src="./public/images/test-thumb4.jpg" alt="#" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h4 class="mb-0">Expert doctors!</h4>
+                                                    <span class="txt-l">Mullar Sarth</span>
+                                                    <p class="txt-l">
+                                                        They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                                                    </p>
+                                                </div>
+                                                <i class="fas fa-quote-right position-absolute red"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section6 -->
+        <!-- Start section7 -->
+        <section class="section7 clients">
+            <div class="container">
+                <div class="row justify-content-center mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-7">
+                        <div class="title text-center">
+                            <h2 class="txt-b">Partners who support us</h2>
+                            <div class="line mx-auto my-4"></div>
+                            <p class="txt-l">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row clients-logo mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/5.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/6.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/3.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/4.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/5.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="client-thumb text-center">
+                            <img src="./public/images/6.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section7 -->
+    </main>
+    <!-- End main tag -->
+    <!-- Start footer tag -->
+    <footer class="footer bg">
+        <div class="container">
+            <div class="row mx-xl-5 px-xl-4 py-lg-1">
+                <div class="box col-lg-4 me-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="logo mb-4">
+                            <img src="./public/images/logo.png" alt="#" class="img-fluid">
+                        </div>
+                        <p class="txt-l">Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+                        <ul class="list-inline socials mt-4">
+                            <li class="list-inline-item"><a href="#" class="d-inline-block text-center rounded-circle text-white"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="d-inline-block text-center rounded-circle text-white"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="d-inline-block text-center rounded-circle text-white"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize txt-b mb-3">Department</h4>
+                        <div class="line mb-4"></div>
+                        <ul class="list-unstyled menu lh-35">
+                            <li><a href="#" class="txt-l">Surgery </a></li>
+                            <li><a href="#" class="txt-l">Women's Health</a></li>
+                            <li><a href="#" class="txt-l">Radiology</a></li>
+                            <li><a href="#" class="txt-l">Cardioc</a></li>
+                            <li><a href="#" class="txt-l">Medicine</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize txt-b mb-3">Support</h4>
+                        <div class="line mb-4"></div>
+                        <ul class="list-unstyled menu lh-35">
+                            <li><a href="#" class="txt-l">Terms & Conditions</a></li>
+                            <li><a href="#" class="txt-l">Privacy Policy</a></li>
+                            <li><a href="#" class="txt-l">Company Support </a></li>
+                            <li><a href="#" class="txt-l">FAQuestions</a></li>
+                            <li><a href="#" class="txt-l">Company Licence</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize txt-b mb-3">Get in Touch</h4>
+                        <div class="line mb-4"></div>
+                        <div class="contact mb-4">
+                            <div class="icon txt-l d-flex align-items-center">
+                                <i class="fas fa-envelope me-3"></i>
+                                <span class="h6 mb-0">Support Available for 24/7</span>
+                            </div>
+                            <h4 class="mt-2"><a href="#" class="hover">Support@email.com</a></h4>
+                        </div>
+                        <div class="contact">
+                            <div class="icon txt-l d-flex align-items-center">
+                                <i class="fas fa-headphones-alt me-3"></i>
+                                <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                            </div>
+                            <h4 class="mt-2"><a href="#" class="hover">+23-456-6588</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom py-4 mt-lg-5">
+                <div class="row align-items-center justify-content-between mx-xl-5 px-xl-4 py-lg-1">
+                    <div class="box col-lg-6">
+                        <div class="copyright txt-l">
+                            Copyright &copy; 2021, Designed & Developed by <a href="#">Themefisher</a>
+                        </div>
+                    </div>
+                    <div class="box col-lg-6">
+                        <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+                            <form action="#" class="subscribe position-relative">
+                                <input type="text" class="form-control" placeholder="Your Email address">
+                                <button class="btn btn-blue position-absolute text-white">
+                                    <a href="#" class="text-uppercase text-decoration-none text-white">Subscribe</a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<!-- End body tag -->
+</html>

@@ -1,0 +1,73 @@
+$white: #fff;
+$black: #000;
+$blue: #223a66;
+$red: #e12454;
+$txt: #6F8BA4;
+$grey: rgba(255, 255, 255, 0.7);
+$bg: #f4f9fc;
+
+// Buttons 
+$buttons: 'red' #e12454, 'blue' #223a66;
+
+// Start font style
+$font-family-exo: 'Exo', sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+
+// Exo font family
+$font-l: (
+    font-family: $font-family-exo,
+    font-weight: 300,
+);
+$font-r: (
+    font-family: $font-family-exo,
+    font-weight: 400,
+);
+$font-m: (
+    font-family: $font-family-exo,
+    font-weight: 500,
+);
+$font-mb: (
+    font-family: $font-family-exo,
+    font-weight: 600,
+);
+$font-b: (
+    font-family: $font-family-exo,
+    font-weight: 700,
+);
+$font-xb: (
+    font-family: $font-family-exo,
+    font-weight: 800,
+);
+
+// Roboto font family
+$font-roboto-l: (
+    font-family: $font-family-roboto,
+    font-weight: 300,
+);
+$font-roboto-r: (
+    font-family: $font-family-roboto,
+    font-weight: 400,
+);
+$font-roboto-m: (
+    font-family: $font-family-roboto,
+    font-weight: 500,
+);
+$font-roboto-mb: (
+    font-family: $font-family-roboto,
+    font-weight: 600,
+);
+$font-roboto-b: (
+    font-family: $font-family-roboto,
+    font-weight: 700,
+);
+$font-roboto-xb: (
+    font-family: $font-family-roboto,
+    font-weight: 800,
+);
+
+@mixin font-style($i) {
+    @each $property, $value in $i{
+        #{$property}: $value;
+    }
+}
+// End font style

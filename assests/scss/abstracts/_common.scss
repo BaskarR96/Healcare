@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+    p{
+        font-size: 16px;
+        line-height: 30px;
+        @include font-style($font-roboto-r);
+    }
+    .line{
+        width: 40px;
+        height: 5px;
+        background: $red;
+    }
+    input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+        outline: none;
+        font-size: 14px;
+    }
+    .bg{
+        background: $bg;
+    }
+    .bg-blue{
+        background: $blue;
+    }
+    .txt-b{
+        color: $blue;
+    }
+    .txt-l{
+        color: $txt;
+    }
+    .grey{
+        color: $grey;
+    }
+    .red{
+        color: $red;
+    }
+}

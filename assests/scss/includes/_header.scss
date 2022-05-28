@@ -1,0 +1,72 @@
+// Start header
+header{
+    .top-bar{
+        .container .row{
+            .address .info .nav-link{
+                font-size: 14px;
+                @include font-style($font-roboto-r);
+            }
+            .phone .number .nav-link{
+                font-size: 14px;
+                letter-spacing: 1px;
+                @include font-style($font-roboto-mb);
+                span{
+                    font-size: 1.3rem;
+                    line-height: 30px;
+                    @include font-style($font-mb);
+                }
+            }
+        }
+    }
+    .navbar .container{
+        .collapse{
+            padding: 20px 0px;
+            .navbar-nav .nav-item{
+                .nav-link{
+                    color: $black;
+                    padding: 10px 15px;
+                    @include font-style($font-mb);
+                    &:hover{
+                        color: $red;
+                    }
+                }
+                .active{
+                    color: $red;
+                }
+                .dropdown-menu{
+                    border: none;
+                    border-top: 4px solid $red;
+                }
+            }
+        }
+    }
+}
+.banner{
+    background: url('../images/slider-bg-1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    .container .row .box{
+        .content{
+            padding: 80px 0px 160px;
+            @include font-style($font-r);
+            .txt-b{
+                font-size: 40px;
+                letter-spacing: -1.2px;
+                @include font-style($font-xb);
+                @include media-min-md{
+                    font-size: 50px;
+                }
+                @include media-min-xl{
+                    font-size: 60px;
+                }
+            }
+            .btn{
+                background: $red;
+            }
+        }
+    }
+    @include media-max-lg{
+        background-size: 100% 100%;
+    }
+}
+// End header

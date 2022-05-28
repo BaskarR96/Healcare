@@ -1,0 +1,74 @@
+// Start footer
+footer{
+    padding: 50px 0 10px;
+    .container{
+        .row .box .widget{
+            .socials .list-inline-item a{
+                width: 45px;
+                height: 45px;
+                background: $txt;
+                padding-top: 12px;
+                &:hover{
+                    background-color: $red;
+                }
+            }
+            .line{
+                height: 3px;
+            }
+            .lh-35{
+                line-height: 35px;
+            }
+            h4{
+                font-size: 1.3rem;
+                line-height: 30px;
+                @include font-style($font-b);
+            }
+            .contact h4{
+                .hover:hover{
+                    color: $red;
+                }
+            }
+            .menu li a{
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+        .bottom {
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            .row .box{
+                .copyright{
+                    a{
+                        @include font-style($font-mb);
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+                }
+                .subscribe-form{
+                    .subscribe {
+                        .form-control {
+                            border-radius: 50px;
+                            height: 60px;
+                            padding-left: 25px;
+                            border-color: #eee;
+                        }
+                        .btn {
+                            right: 6px;
+                            top: 7px;
+                            border-radius: 50px;
+                            background: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-min-sm{
+        padding: 80px 0 10px;
+    }
+    @include media-min-xl{
+        padding: 100px 0 10px;
+    }
+}
+// End footer
