@@ -19,6 +19,16 @@ header{
         }
     }
     .navbar .container{
+        .logo{
+            .navbar-brand{
+                font-size: 27px;
+                color: $red;
+                @include font-style($font-b);
+                @include media-min-sm{
+                    font-size: 30px;
+                }
+            }
+        }
         .collapse{
             padding: 20px 0px;
             .navbar-nav .nav-item{

@@ -3,6 +3,16 @@ footer{
     padding: 50px 0 10px;
     .container{
         .row .box .widget{
+            .logo{
+                .navbar-brand{
+                    font-size: 27px;
+                    color: $red;
+                    @include font-style($font-b);
+                    @include media-min-sm{
+                        font-size: 30px;
+                    }
+                }
+            }
             .socials .list-inline-item a{
                 width: 45px;
                 height: 45px;
